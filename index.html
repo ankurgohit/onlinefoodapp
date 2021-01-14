@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
         <title>Omnifood</title>
     </head>
@@ -13,21 +16,23 @@
             <nav>
                 <div class="row">
                     <img src="./resources/images/logo-white.png" alt="Logo" class="logo">
+                    <img src="./resources/images/logo.png" alt="Logo" class="logo-black">
                     <ul class="main-nav">
-                        <li><a href-"#">Food Delivery</a></li>
-                        <li><a href-"#">How it works</a></li>
-                        <li><a href-"#">Our Cities</a></li>
-                        <li><a href-"#">Sign up</a></li>
+                        <li><a href="#sections">Food Delivery</a></li>
+                        <li><a href="#meals">How it works</a></li>
+                        <li><a href="#cities">Our Cities</a></li>
+                        <li><a href="#signup">Sign up</a></li>
                     </ul>
+                    <a class="mobile-nav-icon"><ion-icon name="menu-outline"></ion-icon></a>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Goodbye junk food.<br> Hello super healthy meals.</h1>
-                <a class="btn btn-primary" href="#">I'm Hungary</a>
-                <a class="btn btn-secondary" href="#">Show me more</a>
+                <a class="btn btn-primary js--scrol-to-plan" href="#">I'm Hungary</a>
+                <a class="btn btn-secondary js-scrol-to-start" href="#">Show me more</a>
             </div>
         </header>
-        <section class="features-section">
+        <section class="features-section js--section-features" id="sections">
             <div class="row">
                 <h2>Get food fast &mdash; not fast food.</h2>
                 <p class="long-copy">
@@ -36,7 +41,7 @@
                     So let us take care of that, we’re really good at it, we promise!
                 </p>
             </div>
-            <div class="row">
+            <div class="row js--wp-1">
                 <div class="col span-1-of-4 box">
                     <ion-icon name="infinite-outline" class="big-icons"></ion-icon>
                     <h3>Up to 365 days/year</h3>
@@ -67,7 +72,7 @@
                 </div>
             </div>
         </section>
-        <section class="sections-meals">
+        <section class="sections-meals" id="meals">
             <ul class="meals-showcase clearfix">
                 <li>
                     <figure class="meal-image">
@@ -119,7 +124,7 @@
             </div>
             <div class="row">
                 <div class="col span-1-of-2 steps-box">
-                    <img src="resources/images/app-iPhone.png" alt="Omnifood App on Iphone" class="app-screen">
+                    <img src="resources/images/app-iPhone.png" alt="Omnifood App on Iphone" class="app-screen js--wp-2">
                 </div>
                 <div class="col span-1-of-2 steps-box">
                     <div class="works-steps">
@@ -144,11 +149,11 @@
             </div>
 
         </section>
-        <section class="cities-section">
+        <section class="cities-section" id="cities">
             <div class="row">
                 <h2>We're currently in these cities</h2>
             </div>
-            <div class="row">
+            <div class="row js--wp-3">
                 <div class="col span-1-of-4 box">
                     <img src="resources/images/lisbon-3.jpg" alt="Lisbon">
                     <h3>Lisbon</h3>
@@ -240,13 +245,13 @@
                 </div>
             </div>
         </section>
-        <section class="plans-section">
+        <section class="plans-section js--section-plans">
             <div class="row">
                 <h2>Start eating healthy today</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-3">
-                    <div class="plan-box">
+                    <div class="plan-box js--wp-4">
                         <div>
                             <h3>Premium</h3>
                             <p class="plan-price">$399 <span>/ month</span></p>
@@ -307,7 +312,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact-section">
+        <section class="contact-section" id="signup">
             <div class="row"><h2>We're happy to hear from you</h2></div>
             <div class="row">
                 <form method="POST" action="#" class="contact-form">
@@ -361,12 +366,39 @@
                             <label>&nbsp;</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="submit" value="Send it!">
+                            <input type="submit" value="Send it!" class="btn btn-primary">
                         </div>
                     </div>
                 </form>
             </div>
         </section>
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><ion-icon name="logo-facebook" class="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter" class="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-google" class="logo-google"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram" class="logo-instagram"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>Copyright &copy; 2020 by Omnifood.All rights reserved</p>
+            </div>
+        </footer>
         <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>script>
+        <script src="resources/js/scripts.js" ></script>
     </body>
 </html>
